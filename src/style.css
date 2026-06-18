@@ -1,0 +1,13 @@
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+/*main element can be taken out of the normal page flow and can be positioned freely 
+Without position: absolute, the <main> content would take up normal space on the page and could push things around*/
+main {
+  position:absolute;
+  color:rgb(168, 160, 160);
+}
