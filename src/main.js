@@ -7,6 +7,11 @@ import * as THREE from 'three';
 /*add orbit controls - will allow movement around the scene using the mouse*/
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
+import spaceImg from './assets/space.jpg';
+import profileImg from './assets/profile.jpg';
+import moonImg from './assets/moon.jpg';
+import normalImg from './assets/normal.jpg';
+
 /*3d website need 3 objects
 1. scene
 2. camera
@@ -84,11 +89,11 @@ function addStar(){
 Array(200).fill().forEach(addStar)
 
 //space background
-const spaceTexture = new THREE.TextureLoader().load('/src/assets/space.jpg');
+const spaceTexture = new THREE.TextureLoader().load(spaceImg);
 scene.background = spaceTexture;
 
 /*texture mapping - taking 2d pixels and mapping to a 3d geometry */
-const profileTexture = new THREE.TextureLoader().load('/src/assets/profile.jpg');
+const profileTexture = new THREE.TextureLoader().load(profileImg);
 const profile = new THREE.Mesh(
   new THREE.BoxGeometry(3,3,3),
   new THREE.MeshBasicMaterial({map: profileTexture })
@@ -117,8 +122,8 @@ updateProfilePosition();
 
 //moon
 
-const moonTexture = new THREE.TextureLoader().load('/src/assets/moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('/src/assets/normal.jpg');
+const moonTexture = new THREE.TextureLoader().load(moonImg);
+const normalTexture = new THREE.TextureLoader().load(normalImg);
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3,32,32),
   new THREE.MeshStandardMaterial({
