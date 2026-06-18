@@ -1,8 +1,14 @@
 # Demo3DWebsite
 
-A Three.js demo website built to practice 3D web development, animations, textures, lighting, scrolling camera effects, and interactive objects.
+A deployed Three.js demo website built to practice 3D web development, animations, textures, lighting, scrolling camera effects, and interactive objects.
 
 This project is preparation for building my full 3D personal portfolio website.
+
+## Live Website
+
+View the deployed site here:
+
+https://lureta.github.io/Demo3DWebsite/
 
 ## Features
 
@@ -13,20 +19,6 @@ This project is preparation for building my full 3D personal portfolio website.
 * Lighting effects
 * Scrolling camera movement
 * Space background
-
-## How to Run
-
-First, install the dependencies:
-
-npm install
-
-Then start the development server:
-
-npm run dev
-
-Open the local URL shown in the terminal, usually:
-
-http://localhost:5173
 
 ## Built With
 
